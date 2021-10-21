@@ -1,0 +1,63 @@
+﻿<Page x:Class="Kurs.AddComponentMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Kurs"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Title="AddComponentMenu">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="100*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Image Source="resources/Background.jpg" Grid.ColumnSpan="10" Grid.RowSpan="10"/>
+        <StackPanel Orientation="Vertical" Grid.Row="2" Grid.Column="1">
+            <ComboBox x:Name="ComboBox" SelectionChanged="ComboBox_SelectionChanged" Height="100" FontSize="70" Foreground="Red" Background="White">
+                <ComboBoxItem FontSize="40.3">
+                    Видеокарты
+                </ComboBoxItem>
+                <ComboBoxItem FontSize="40.3">
+                    Процессоры
+                </ComboBoxItem>
+                <ComboBoxItem FontSize="40.3">
+                    Материнские платы
+                </ComboBoxItem>
+                <ComboBoxItem FontSize="40.3">
+                    Оперативная память
+                </ComboBoxItem>
+                <ComboBoxItem FontSize="40.3">
+                    Блоки питания
+                </ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+        <TextBox x:Name="CompanyText" Grid.Row="4" Grid.Column="1" FontSize="70" Foreground="Red"/>
+        <TextBox x:Name="NameText" Grid.Row="6" Grid.Column="1" FontSize="70" Foreground="Red"/>
+        <TextBox x:Name="DescriptionText" Grid.Row="2" Grid.Column="3" FontSize="70" Foreground="Red"/>
+        <TextBox x:Name="PriceText" Grid.Row="4" Grid.Column="3" FontSize="70" Foreground="Red"/>
+        <Button Click="AddComponentButton" Grid.Row="6" Grid.Column="3" Background="#6AF98B" FontSize="45" Content="ДОБАВИТЬ" Foreground="Red" />
+        <Button Click="BackButton" Background="#6AF98B" FontSize="45" Content="НАЗАД" Foreground="Red" />
+        <Label Grid.Row="0" Grid.Column="1" Content="Категория" Foreground="Red" FontSize="45" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Label Grid.Row="3" Grid.Column="1" Content="Производитель" Foreground="Red" FontSize="45" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Label Grid.Row="5" Grid.Column="1" Content="Название" Foreground="Red" FontSize="45" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Label Grid.Row="0" Grid.Column="3" Content="Характеристики" Foreground="Red" FontSize="45" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Label Grid.Row="3" Grid.Column="3" Content="Цена" Foreground="Red" FontSize="45" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+    </Grid>
+    
+</Page>

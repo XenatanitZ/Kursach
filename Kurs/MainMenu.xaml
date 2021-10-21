@@ -1,0 +1,49 @@
+﻿<Page x:Class="Kurs.MainMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:Kurs"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Title="MainMenu">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="400*"/>
+            <ColumnDefinition Width="200*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Image Source="resources/Background.jpg" Grid.ColumnSpan="3" Grid.RowSpan="12"/>
+        <Label x:Name="MainMenuTitle" Grid.Row="0" Grid.Column="1" Content="Главное меню"  VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="50"
+                Background="{x:Null}"  Foreground="Red" />
+        <Button  x:Name="CustomersButton" Grid.Row="2" Grid.Column="1" Content="НАШИ СОТРУДНИКИ" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="45"
+                Background="#6AF98B"  Foreground="Red"  Click="CustomersOpen"/>
+        <Button  x:Name="ComponentsButton" Grid.Row="4" Grid.Column="1" Content="КОМПЛЕКТУЮЩИЕ" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="45"
+                Background="#6AF98B" Foreground="Red"  Click="ComponentsOpen"/>
+        <Button  Grid.Row="6" Grid.Column="1" Content="КОРЗИНА" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="45"
+                Background="#6AF98B" Foreground="Red"  Click="BucketOpen"/>
+        <Button  Grid.Row="0" Grid.Column="0" Content="ВЫХОД" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="45"
+                Background="#6AF98B" Foreground="Red"  Click="ExitButton"/>
+        <Button  Grid.Row="8" Grid.Column="1" Content="ДОБАВИТЬ КОМПЛ." VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="45"
+                Background="#6AF98B" Foreground="Red"  Click="ComponentsAdding"/>
+        <Button  Grid.Row="10" Grid.Column="1" Content="ПОИСК" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="45"
+                Background="#6AF98B" Foreground="Red"  Click="SearchOpen"/>
+    </Grid>
+    
+</Page>

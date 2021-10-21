@@ -1,0 +1,37 @@
+﻿<Page x:Class="Kurs.Bucket"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Kurs"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Title="Bucket">
+    
+    <Grid>
+        <Image Source="resources/Background.jpg" Grid.ColumnSpan="10" Grid.RowSpan="12"/>
+        <Label Grid.Row="0" Grid.Column="2" Content="Корзина" Foreground="Red" FontSize="60" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <Button Click="BackButton" Content="НАЗАД" Background="#6AF98B" FontSize="50" Foreground="Red" />
+        <Button Click="AcceptButton" Grid.Column="4" Content="ОФОРМИТЬ" Background="#6AF98B" FontSize="50" Foreground="Red" />
+        <Button Click="ClearBucketButton" Grid.Row="5" Grid.Column="2" Content="ОЧИСТИТЬ" Background="#6AF98B" FontSize="50" Foreground="Red" />
+        <DataGrid x:Name="DG" Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="366" Margin="0,102,0,0" Grid.RowSpan="5" VerticalAlignment="Top" Width="1280"/>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="100*"/>
+        </Grid.ColumnDefinitions>
+    </Grid>
+    
+</Page>

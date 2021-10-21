@@ -1,0 +1,47 @@
+﻿<Page x:Class="Kurs.CategoryChoosing"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Kurs"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Title="CategoryChoosing">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="15*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="300*"/>
+            <ColumnDefinition Width="200*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Image Source="resources/Background.jpg" Grid.ColumnSpan="3" Grid.RowSpan="12"/>
+        <Button Click ="GraphicsCardsButton" x:Name="GraphicsCards" Grid.Row="2" Grid.Column="1" Content="ВИДЕОКАРТЫ" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
+                FontSize="45" Background="#6AF98B" Foreground="Red"  BorderBrush="{x:Null}" />
+        <Button Click ="ProcessorsButton" x:Name="Processors" Grid.Row="4" Grid.Column="1" Content="ПРОЦЕССОРЫ" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
+                FontSize="45" Background="#6AF98B" Foreground="Red"  BorderBrush="{x:Null}" />
+        <Button Click ="MotherboardsButton" x:Name="Motherboards" Grid.Row="6" Grid.Column="1" Content="МАТЕРИНСКИЕ ПЛАТЫ" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
+                FontSize="45" Background="#6AF98B" Foreground="Red"  BorderBrush="{x:Null}" />
+        <Button Click ="RAMButton" x:Name="RAM" Grid.Row="8" Grid.Column="1" Content="ОПЕРАТИВНАЯ ПАМЯТЬ" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
+                FontSize="45" Background="#6AF98B" Foreground="Red"  BorderBrush="{x:Null}" />
+        <Button Click ="PowerSuppliesButton" x:Name="PowerSupplies" Grid.Row="10" Grid.Column="1" Content="БЛОКИ ПИТАНИЯ" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
+                FontSize="45" Background="#6AF98B" Foreground="Red"  BorderBrush="{x:Null}" />
+        <Button Click ="BackButton" x:Name="Back" Grid.Row="0" Grid.Column="0" Content="НАЗАД" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
+                FontSize="45" Background="#6AF98B" Foreground="Red"  BorderBrush="{x:Null}" />
+    </Grid>
+    
+</Page>
